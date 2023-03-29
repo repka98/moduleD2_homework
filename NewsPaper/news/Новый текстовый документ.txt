@@ -1,0 +1,2166 @@
+C:\Users\Олег>d:
+
+D:\>django_D1_module
+"django_D1_module" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+D:\>cd django_D1_module
+
+D:\django_D1_module>python -m venv venv
+
+D:\django_D1_module>venv\scripts\activate
+
+(venv) D:\django_D1_module>pip install django
+Collecting django
+  Using cached Django-4.1.2-py3-none-any.whl (8.1 MB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.3-py3-none-any.whl (42 kB)
+Collecting tzdata
+  Using cached tzdata-2022.5-py2.py3-none-any.whl (336 kB)
+Collecting asgiref<4,>=3.5.2
+  Using cached asgiref-3.5.2-py3-none-any.whl (22 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.5.2 django-4.1.2 sqlparse-0.4.3 tzdata-2022.5
+WARNING: You are using pip version 21.2.4; however, version 22.3 is available.
+You should consider upgrading via the 'D:\django_D1_module\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(venv) D:\django_D1_module>django-admin startproject projet
+
+(venv) D:\django_D1_module>cd projet
+
+(venv) D:\django_D1_module\projet>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+October 25, 2022 - 00:36:13
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\django_D1_module\projet\projet\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 21 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, flatpages, sessions, sites.
+Run 'python manage.py migrate' to apply them.
+October 25, 2022 - 00:37:57
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\django_D1_module\projet\projet\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 21 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, flatpages, sessions, sites.
+Run 'python manage.py migrate' to apply them.
+October 25, 2022 - 00:38:06
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\django_D1_module\projet\projet\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 21 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, flatpages, sessions, sites.
+Run 'python manage.py migrate' to apply them.
+October 25, 2022 - 00:38:20
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\django_D1_module\projet\projet\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 21 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, flatpages, sessions, sites.
+Run 'python manage.py migrate' to apply them.
+October 25, 2022 - 00:38:32
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+D:\django_D1_module\projet\projet\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 21 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, flatpages, sessions, sites.
+Run 'python manage.py migrate' to apply them.
+October 25, 2022 - 00:39:00
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: django_site
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\django_D1_module\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_D1_module\venv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_D1_module\venv\lib\site-packages\django\contrib\flatpages\middleware.py", line 12, in process_response
+    return flatpage(request, request.path_info)
+  File "D:\django_D1_module\venv\lib\site-packages\django\contrib\flatpages\views.py", line 35, in flatpage
+    site_id = get_current_site(request).id
+  File "D:\django_D1_module\venv\lib\site-packages\django\contrib\sites\shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+  File "D:\django_D1_module\venv\lib\site-packages\django\contrib\sites\models.py", line 59, in get_current
+    return self._get_site_by_id(site_id)
+  File "D:\django_D1_module\venv\lib\site-packages\django\contrib\sites\models.py", line 30, in _get_site_by_id
+    site = self.get(pk=site_id)
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\models\query.py", line 646, in get
+    num = len(clone)
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\models\query.py", line 376, in __len__
+    self._fetch_all()
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\models\query.py", line 1866, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\models\query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\django_D1_module\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: django_site
+[25/Oct/2022 00:39:46] "GET / HTTP/1.1" 500 143709
+
+(venv) D:\django_D1_module\projet>
+
+(venv) D:\django_D1_module\projet>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, flatpages, sessions, sites
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sites.0001_initial... OK
+  Applying flatpages.0001_initial... OK
+  Applying sessions.0001_initial... OK
+  Applying sites.0002_alter_domain_unique... OK
+
+(venv) D:\django_D1_module\projet>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 25, 2022 - 00:41:31
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Not Found: /
+[25/Oct/2022 00:41:37] "GET / HTTP/1.1" 404 2165
+[25/Oct/2022 00:42:05] "GET /admin HTTP/1.1" 301 0
+[25/Oct/2022 00:42:05] "GET /admin/ HTTP/1.1" 302 0
+[25/Oct/2022 00:42:05] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2218
+[25/Oct/2022 00:42:05] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+[25/Oct/2022 00:42:05] "GET /static/admin/css/login.css HTTP/1.1" 200 958
+[25/Oct/2022 00:42:05] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+[25/Oct/2022 00:42:05] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[25/Oct/2022 00:42:05] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+[25/Oct/2022 00:42:05] "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+[25/Oct/2022 00:42:05] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[25/Oct/2022 00:42:05] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[25/Oct/2022 00:42:05] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+
+(venv) D:\django_D1_module\projet>python manage.py createsuperuser
+Username: admin
+Email address:
+Password:
+Password (again):
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+This password is entirely numeric.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+(venv) D:\django_D1_module\projet>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 25, 2022 - 00:43:17
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[25/Oct/2022 00:43:21] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2218
+[25/Oct/2022 00:43:21] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[25/Oct/2022 00:43:21] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[25/Oct/2022 00:43:21] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[25/Oct/2022 00:43:21] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[25/Oct/2022 00:43:21] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[25/Oct/2022 00:43:21] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[25/Oct/2022 00:43:21] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[25/Oct/2022 00:43:21] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 00:43:21] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 00:43:28] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[25/Oct/2022 00:43:28] "GET /admin/ HTTP/1.1" 200 4893
+[25/Oct/2022 00:43:28] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[25/Oct/2022 00:43:28] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[25/Oct/2022 00:43:28] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[25/Oct/2022 00:43:28] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[25/Oct/2022 00:43:49] "GET /admin/flatpages/flatpage/add/ HTTP/1.1" 200 10395
+[25/Oct/2022 00:43:49] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[25/Oct/2022 00:43:49] "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+[25/Oct/2022 00:43:49] "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+[25/Oct/2022 00:43:49] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[25/Oct/2022 00:43:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 00:43:49] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+[25/Oct/2022 00:43:49] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+[25/Oct/2022 00:43:49] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[25/Oct/2022 00:43:49] "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[25/Oct/2022 00:43:49] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[25/Oct/2022 00:43:49] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[25/Oct/2022 00:43:49] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+[25/Oct/2022 00:43:49] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[25/Oct/2022 00:43:49] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[25/Oct/2022 00:44:37] "POST /admin/flatpages/flatpage/add/ HTTP/1.1" 200 10581
+[25/Oct/2022 00:44:37] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[25/Oct/2022 00:44:38] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[25/Oct/2022 00:44:38] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[25/Oct/2022 00:44:38] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[25/Oct/2022 00:44:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 00:44:38] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[25/Oct/2022 00:44:38] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[25/Oct/2022 00:44:38] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[25/Oct/2022 00:44:38] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 00:44:38] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 00:44:38] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 00:45:03] "POST /admin/flatpages/flatpage/add/ HTTP/1.1" 302 0
+[25/Oct/2022 00:45:03] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 8842
+[25/Oct/2022 00:45:03] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+[25/Oct/2022 00:45:03] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[25/Oct/2022 00:45:03] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[25/Oct/2022 00:45:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 00:45:03] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[25/Oct/2022 00:45:03] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[25/Oct/2022 00:45:03] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[25/Oct/2022 00:45:03] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[25/Oct/2022 00:45:03] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[25/Oct/2022 00:45:03] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[25/Oct/2022 00:45:03] "GET /static/admin/js/filters.js HTTP/1.1" 200 966
+[25/Oct/2022 00:45:03] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[25/Oct/2022 00:45:03] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[25/Oct/2022 00:45:03] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[25/Oct/2022 00:45:03] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[25/Oct/2022 00:45:15] "GET /admin/flatpages/flatpage/1/change/ HTTP/1.1" 200 10796
+[25/Oct/2022 00:45:15] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[25/Oct/2022 00:45:16] "GET /static/admin/js/collapse.js HTTP/1.1" 304 0
+[25/Oct/2022 00:45:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 00:45:16] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[25/Oct/2022 00:45:16] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[25/Oct/2022 00:45:16] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[25/Oct/2022 00:45:16] "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 280
+[25/Oct/2022 00:45:22] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 8623
+[25/Oct/2022 00:45:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 00:45:59] "GET /about HTTP/1.1" 301 0
+Internal Server Error: /about/
+Traceback (most recent call last):
+  File "D:\django_D1_module\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\django_D1_module\venv\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+  File "D:\django_D1_module\venv\lib\site-packages\django\contrib\flatpages\middleware.py", line 12, in process_response
+    return flatpage(request, request.path_info)
+  File "D:\django_D1_module\venv\lib\site-packages\django\contrib\flatpages\views.py", line 45, in flatpage
+    return render_flatpage(request, f)
+  File "D:\django_D1_module\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\django_D1_module\venv\lib\site-packages\django\contrib\flatpages\views.py", line 62, in render_flatpage
+    template = loader.get_template(DEFAULT_TEMPLATE)
+  File "D:\django_D1_module\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: flatpages/default.html
+[25/Oct/2022 00:45:59] "GET /about/ HTTP/1.1" 500 82003
+D:\django_D1_module\projet\projet\settings.py changed, reloading.
+Traceback (most recent call last):
+  File "D:\django_D1_module\projet\manage.py", line 22, in <module>
+    main()
+  File "D:\django_D1_module\projet\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "D:\django_D1_module\venv\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "D:\django_D1_module\venv\lib\site-packages\django\core\management\__init__.py", line 386, in execute
+    settings.INSTALLED_APPS
+  File "D:\django_D1_module\venv\lib\site-packages\django\conf\__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "D:\django_D1_module\venv\lib\site-packages\django\conf\__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "D:\django_D1_module\venv\lib\site-packages\django\conf\__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\django_D1_module\projet\projet\settings.py", line 64
+    'APP_DIRS': True,
+              ^
+SyntaxError: invalid syntax
+
+(venv) D:\django_D1_module\projet>python manage.py runserver
+Traceback (most recent call last):
+  File "D:\django_D1_module\projet\manage.py", line 22, in <module>
+    main()
+  File "D:\django_D1_module\projet\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "D:\django_D1_module\venv\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "D:\django_D1_module\venv\lib\site-packages\django\core\management\__init__.py", line 386, in execute
+    settings.INSTALLED_APPS
+  File "D:\django_D1_module\venv\lib\site-packages\django\conf\__init__.py", line 92, in __getattr__
+    self._setup(name)
+  File "D:\django_D1_module\venv\lib\site-packages\django\conf\__init__.py", line 79, in _setup
+    self._wrapped = Settings(settings_module)
+  File "D:\django_D1_module\venv\lib\site-packages\django\conf\__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\django_D1_module\projet\projet\settings.py", line 63, in <module>
+    'DIRS': [os.path.join(BASE_DIR, 'templates')],
+NameError: name 'os' is not defined
+
+(venv) D:\django_D1_module\projet>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 25, 2022 - 00:51:50
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[25/Oct/2022 00:51:54] "GET /about/ HTTP/1.1" 200 300
+[25/Oct/2022 00:52:55] "GET /about/ HTTP/1.1" 200 314
+[25/Oct/2022 01:01:30] "GET /admin/ HTTP/1.1" 200 5231
+[25/Oct/2022 01:01:30] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[25/Oct/2022 01:01:30] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[25/Oct/2022 01:01:30] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[25/Oct/2022 01:01:30] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[25/Oct/2022 01:01:30] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[25/Oct/2022 01:01:30] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:30] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[25/Oct/2022 01:01:30] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:01:30] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:01:30] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:01:30] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:01:30] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:01:33] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 8623
+[25/Oct/2022 01:01:33] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[25/Oct/2022 01:01:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:01:33] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:33] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:33] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:33] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:33] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:33] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:33] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:33] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:34] "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:34] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:01:34] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:01:34] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:01:45] "GET /admin/flatpages/flatpage/add/ HTTP/1.1" 200 10395
+[25/Oct/2022 01:01:45] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[25/Oct/2022 01:01:45] "GET /static/admin/js/collapse.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:01:45] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[25/Oct/2022 01:01:45] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[25/Oct/2022 01:01:45] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[25/Oct/2022 01:02:24] "POST /admin/flatpages/flatpage/add/ HTTP/1.1" 302 0
+[25/Oct/2022 01:02:24] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 9096
+[25/Oct/2022 01:02:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:02:24] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:02:50] "GET /admin/flatpages/flatpage/1/change/ HTTP/1.1" 200 10796
+[25/Oct/2022 01:02:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:02:50] "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:03:16] "POST /admin/flatpages/flatpage/1/change/ HTTP/1.1" 302 0
+[25/Oct/2022 01:03:16] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 9094
+[25/Oct/2022 01:03:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:04:09] "GET /about/ HTTP/1.1" 200 314
+[25/Oct/2022 01:04:22] "GET /admin/ HTTP/1.1" 200 5848
+[25/Oct/2022 01:04:22] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[25/Oct/2022 01:04:22] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[25/Oct/2022 01:04:22] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[25/Oct/2022 01:04:22] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[25/Oct/2022 01:04:22] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[25/Oct/2022 01:04:22] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:22] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[25/Oct/2022 01:04:22] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:04:22] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:04:22] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:04:22] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:04:22] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 8873
+[25/Oct/2022 01:04:24] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:04:24] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:04:24] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:04:26] "GET /admin/flatpages/flatpage/2/change/ HTTP/1.1" 200 10829
+[25/Oct/2022 01:04:26] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[25/Oct/2022 01:04:26] "GET /static/admin/js/collapse.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:04:26] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[25/Oct/2022 01:04:26] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:26] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[25/Oct/2022 01:04:50] "POST /admin/flatpages/flatpage/2/change/ HTTP/1.1" 302 0
+[25/Oct/2022 01:04:50] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 9098
+[25/Oct/2022 01:04:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /contact
+[25/Oct/2022 01:05:04] "GET /contact HTTP/1.1" 404 2204
+Not Found: /contact/
+[25/Oct/2022 01:05:25] "GET /contact/ HTTP/1.1" 404 2207
+[25/Oct/2022 01:05:36] "GET /admin HTTP/1.1" 301 0
+[25/Oct/2022 01:05:36] "GET /admin/ HTTP/1.1" 200 6160
+[25/Oct/2022 01:05:36] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+[25/Oct/2022 01:05:36] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[25/Oct/2022 01:05:36] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+[25/Oct/2022 01:05:36] "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+[25/Oct/2022 01:05:36] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+[25/Oct/2022 01:05:36] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[25/Oct/2022 01:05:36] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[25/Oct/2022 01:05:36] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[25/Oct/2022 01:05:36] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[25/Oct/2022 01:05:37] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[25/Oct/2022 01:05:37] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[25/Oct/2022 01:05:37] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[25/Oct/2022 01:05:40] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 8873
+[25/Oct/2022 01:05:40] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[25/Oct/2022 01:05:40] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[25/Oct/2022 01:05:40] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+[25/Oct/2022 01:05:40] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+[25/Oct/2022 01:05:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:05:40] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+[25/Oct/2022 01:05:40] "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[25/Oct/2022 01:05:40] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[25/Oct/2022 01:05:40] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[25/Oct/2022 01:05:40] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[25/Oct/2022 01:05:40] "GET /static/admin/js/filters.js HTTP/1.1" 200 966
+[25/Oct/2022 01:05:40] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[25/Oct/2022 01:05:40] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[25/Oct/2022 01:05:40] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[25/Oct/2022 01:05:55] "GET /contats/ HTTP/1.1" 200 331
+[25/Oct/2022 01:11:36] "GET /admin/ HTTP/1.1" 200 6160
+[25/Oct/2022 01:11:36] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[25/Oct/2022 01:11:36] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[25/Oct/2022 01:11:36] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[25/Oct/2022 01:11:36] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[25/Oct/2022 01:11:36] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[25/Oct/2022 01:11:36] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[25/Oct/2022 01:11:36] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[25/Oct/2022 01:11:36] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:11:36] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:11:36] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:11:36] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:11:36] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 8873
+[25/Oct/2022 01:11:39] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:11:39] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:11:39] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:11:41] "GET /admin/flatpages/flatpage/1/change/ HTTP/1.1" 200 10825
+[25/Oct/2022 01:11:41] "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+[25/Oct/2022 01:11:41] "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+[25/Oct/2022 01:11:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:11:41] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+[25/Oct/2022 01:11:41] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[25/Oct/2022 01:11:41] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[25/Oct/2022 01:11:42] "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 280
+D:\django_D1_module\projet\projet\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 25, 2022 - 01:18:18
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[25/Oct/2022 01:20:20] "GET /about/ HTTP/1.1" 200 314
+Not Found: /
+[25/Oct/2022 01:20:33] "GET / HTTP/1.1" 404 2165
+Not Found: /contacts/
+[25/Oct/2022 01:20:45] "GET /contacts/ HTTP/1.1" 404 2210
+Not Found: /contacts/
+[25/Oct/2022 01:25:48] "GET /contacts/ HTTP/1.1" 404 2210
+
+(venv) D:\django_D1_module\projet>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 25, 2022 - 01:26:06
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[25/Oct/2022 01:26:16] "GET /about/ HTTP/1.1" 200 1812
+[25/Oct/2022 01:26:16] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 1873
+[25/Oct/2022 01:26:16] "GET /static/vendor/jquery/jquery.slim.min.js HTTP/1.1" 404 1855
+[25/Oct/2022 01:26:16] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1888
+Not Found: /contacts/
+[25/Oct/2022 01:26:24] "GET /contacts/ HTTP/1.1" 404 2210
+[25/Oct/2022 01:27:41] "GET /admin/ HTTP/1.1" 200 6160
+[25/Oct/2022 01:27:41] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[25/Oct/2022 01:27:41] "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[25/Oct/2022 01:27:41] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[25/Oct/2022 01:27:41] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[25/Oct/2022 01:27:41] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[25/Oct/2022 01:27:41] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:41] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[25/Oct/2022 01:27:42] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:27:42] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:27:42] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:27:42] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:27:42] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 8873
+[25/Oct/2022 01:27:44] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:27:44] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:27:44] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:27:48] "GET /admin/flatpages/flatpage/2/change/ HTTP/1.1" 200 10860
+[25/Oct/2022 01:27:48] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[25/Oct/2022 01:27:48] "GET /static/admin/js/collapse.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:27:48] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[25/Oct/2022 01:27:48] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:48] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[25/Oct/2022 01:27:48] "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 304 0
+[25/Oct/2022 01:27:59] "POST /admin/flatpages/flatpage/2/change/ HTTP/1.1" 302 0
+[25/Oct/2022 01:27:59] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 9100
+[25/Oct/2022 01:27:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 01:28:00] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[25/Oct/2022 01:28:07] "GET /about/ HTTP/1.1" 200 1812
+[25/Oct/2022 01:28:07] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 1873
+[25/Oct/2022 01:28:07] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1888
+[25/Oct/2022 01:28:07] "GET /static/vendor/jquery/jquery.slim.min.js HTTP/1.1" 404 1855
+[25/Oct/2022 01:28:14] "GET /contacts/ HTTP/1.1" 200 1850
+[25/Oct/2022 01:28:14] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 1873
+[25/Oct/2022 01:28:14] "GET /static/vendor/jquery/jquery.slim.min.js HTTP/1.1" 404 1855
+[25/Oct/2022 01:28:14] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1888
+[25/Oct/2022 01:28:15] "GET /about/ HTTP/1.1" 200 1812
+[25/Oct/2022 01:28:15] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 404 1873
+[25/Oct/2022 01:28:15] "GET /static/vendor/jquery/jquery.slim.min.js HTTP/1.1" 404 1855
+[25/Oct/2022 01:28:16] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1888
+[25/Oct/2022 10:56:35] "GET /about/ HTTP/1.1" 200 1787
+[25/Oct/2022 10:56:35] "GET /static/css/style.css HTTP/1.1" 404 1798
+[25/Oct/2022 10:56:35] "GET /static/vendor/jquery/jquery.slim.min.js HTTP/1.1" 404 1855
+[25/Oct/2022 10:56:36] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1888
+[25/Oct/2022 10:56:37] "GET /about/ HTTP/1.1" 200 1787
+[25/Oct/2022 10:56:37] "GET /static/css/style.css HTTP/1.1" 404 1798
+[25/Oct/2022 10:56:37] "GET /static/vendor/jquery/jquery.slim.min.js HTTP/1.1" 404 1855
+[25/Oct/2022 10:56:37] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1888
+
+(venv) D:\django_D1_module\projet>
+
+(venv) D:\django_D1_module\projet>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 25, 2022 - 10:56:53
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[25/Oct/2022 10:56:57] "GET /about/ HTTP/1.1" 200 1787
+[25/Oct/2022 10:56:57] "GET /static/vendor/jquery/jquery.slim.min.js HTTP/1.1" 404 1855
+[25/Oct/2022 10:56:57] "GET /static/css/style.css HTTP/1.1" 404 1798
+[25/Oct/2022 10:56:57] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 404 1888
+
+(venv) D:\django_D1_module\projet>cd static
+
+(venv) D:\django_D1_module\projet\static>npm i startbootstrap-bare
+
+added 3 packages, and audited 4 packages in 5s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+(venv) D:\django_D1_module\projet\static>npm install
+
+up to date, audited 4 packages in 2s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+(venv) D:\django_D1_module\projet\static>npm start
+npm ERR! Missing script: "start"
+npm ERR!
+npm ERR! Did you mean one of these?
+npm ERR!     npm star # Mark your favorite packages
+npm ERR!     npm stars # View packages marked as favorites
+npm ERR!
+npm ERR! To see a list of scripts, run:
+npm ERR!   npm run
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Олег\AppData\Local\npm-cache\_logs\2022-10-25T08_01_31_455Z-debug.log
+
+(venv) D:\django_D1_module\projet\static>npm run build
+npm ERR! Missing script: "build"
+npm ERR!
+npm ERR! To see a list of scripts, run:
+npm ERR!   npm run
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Олег\AppData\Local\npm-cache\_logs\2022-10-25T08_01_49_718Z-debug.log
+
+(venv) D:\django_D1_module\projet\static>cd..
+
+(venv) D:\django_D1_module\projet>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 25, 2022 - 11:08:24
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[25/Oct/2022 11:08:29] "GET /about/ HTTP/1.1" 200 1812
+[25/Oct/2022 11:08:30] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 160403
+[25/Oct/2022 11:08:30] "GET /static/vendor/jquery/jquery.slim.min.js HTTP/1.1" 200 72380
+[25/Oct/2022 11:08:30] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 81084
+[25/Oct/2022 11:08:34] "GET /about/ HTTP/1.1" 200 1812
+[25/Oct/2022 11:08:35] "GET /contacts/ HTTP/1.1" 200 1850
+[25/Oct/2022 11:58:42] "GET /contacts/ HTTP/1.1" 200 1857
+[25/Oct/2022 11:58:42] "GET /static/vendor/jquery/jquery.slim.min.js HTTP/1.1" 200 72380
+[25/Oct/2022 11:58:42] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 160403
+[25/Oct/2022 11:58:42] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 81084
+[25/Oct/2022 11:59:05] "GET /contacts/ HTTP/1.1" 200 1868
+[25/Oct/2022 11:59:24] "GET /contacts/ HTTP/1.1" 200 1875
+[25/Oct/2022 12:02:12] "GET /admin HTTP/1.1" 301 0
+[25/Oct/2022 12:02:12] "GET /admin/ HTTP/1.1" 200 6473
+[25/Oct/2022 12:02:12] "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+[25/Oct/2022 12:02:12] "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+[25/Oct/2022 12:02:12] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+[25/Oct/2022 12:02:12] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[25/Oct/2022 12:02:12] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+[25/Oct/2022 12:02:12] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+[25/Oct/2022 12:02:12] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[25/Oct/2022 12:02:12] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[25/Oct/2022 12:02:12] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[25/Oct/2022 12:02:12] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[25/Oct/2022 12:02:12] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[25/Oct/2022 12:02:12] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[25/Oct/2022 12:02:14] "GET /admin/flatpages/flatpage/add/ HTTP/1.1" 200 10395
+[25/Oct/2022 12:02:14] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[25/Oct/2022 12:02:14] "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+[25/Oct/2022 12:02:14] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[25/Oct/2022 12:02:14] "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+[25/Oct/2022 12:02:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 12:02:14] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+[25/Oct/2022 12:02:14] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+[25/Oct/2022 12:02:14] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[25/Oct/2022 12:02:14] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[25/Oct/2022 12:02:14] "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+[25/Oct/2022 12:02:14] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[25/Oct/2022 12:02:14] "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+[25/Oct/2022 12:02:14] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[25/Oct/2022 12:02:14] "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[25/Oct/2022 12:04:07] "POST /admin/flatpages/flatpage/add/ HTTP/1.1" 200 10653
+[25/Oct/2022 12:04:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 12:04:16] "POST /admin/flatpages/flatpage/add/ HTTP/1.1" 302 0
+[25/Oct/2022 12:04:16] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 9390
+[25/Oct/2022 12:04:17] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+[25/Oct/2022 12:04:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 12:04:17] "GET /static/admin/js/filters.js HTTP/1.1" 200 966
+[25/Oct/2022 12:04:17] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[25/Oct/2022 12:04:17] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[25/Oct/2022 12:04:17] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[25/Oct/2022 12:04:17] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[25/Oct/2022 12:04:56] "GET /about/ HTTP/1.1" 200 1812
+[25/Oct/2022 12:04:56] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[25/Oct/2022 12:04:56] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+[25/Oct/2022 12:04:56] "GET /static/vendor/jquery/jquery.slim.min.js HTTP/1.1" 304 0
+[25/Oct/2022 12:06:09] "GET /about/ HTTP/1.1" 200 1923
+[25/Oct/2022 12:06:11] "GET /socnetwork/ HTTP/1.1" 200 1876
+[25/Oct/2022 12:06:41] "GET /admin/ HTTP/1.1" 200 6804
+[25/Oct/2022 12:06:43] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 9145
+[25/Oct/2022 12:06:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 12:06:45] "GET /admin/flatpages/flatpage/3/change/ HTTP/1.1" 200 10929
+[25/Oct/2022 12:06:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 12:06:45] "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 280
+[25/Oct/2022 12:06:54] "POST /admin/flatpages/flatpage/3/change/ HTTP/1.1" 302 0
+[25/Oct/2022 12:06:54] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 9392
+[25/Oct/2022 12:06:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 12:07:04] "GET /about/ HTTP/1.1" 200 1923
+[25/Oct/2022 12:07:06] "GET /socnetwork/ HTTP/1.1" 200 1876
+[25/Oct/2022 12:07:08] "GET /contacts/ HTTP/1.1" 200 1986
+[25/Oct/2022 12:07:09] "GET /about/ HTTP/1.1" 200 1923
+[25/Oct/2022 12:07:37] "GET /admin/ HTTP/1.1" 200 7138
+[25/Oct/2022 12:07:39] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 9145
+[25/Oct/2022 12:07:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 12:07:41] "GET /admin/flatpages/flatpage/1/change/ HTTP/1.1" 200 10825
+[25/Oct/2022 12:07:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 12:07:50] "POST /admin/flatpages/flatpage/1/change/ HTTP/1.1" 302 0
+[25/Oct/2022 12:07:50] "GET /admin/flatpages/flatpage/ HTTP/1.1" 200 9366
+[25/Oct/2022 12:07:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+[25/Oct/2022 12:11:31] "GET /about/ HTTP/1.1" 200 2061
+[25/Oct/2022 12:11:31] "GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[25/Oct/2022 12:11:31] "GET /static/vendor/jquery/jquery.slim.min.js HTTP/1.1" 304 0
+[25/Oct/2022 12:11:31] "GET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+
+(venv) D:\django_D1_module\projet>cd..
+
+(venv) D:\django_D1_module>project
+"project" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+(venv) D:\django_D1_module>cd moduleD1_homework
+
+(venv) D:\django_D1_module\moduleD1_homework>cd projet
+
+(venv) D:\django_D1_module\moduleD1_homework\projet>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 25, 2022 - 12:14:44
+Django version 4.1.2, using settings 'projet.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[25/Oct/2022 12:14:47] "GET /about/ HTTP/1.1" 200 2061
+
+(venv) D:\django_D1_module\moduleD1_homework\projet>cd..
+
+(venv) D:\django_D1_module\moduleD1_homework>deactivate
+D:\django_D1_module\moduleD1_homework>cd..
+
+D:\django_D1_module>cd..
+
+D:\>cd moduleD2_homework
+
+D:\moduleD2_homework>python -m venv venv
+
+D:\moduleD2_homework>venv\bin\activate
+Системе не удается найти указанный путь.
+
+D:\moduleD2_homework>ls
+"ls" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+D:\moduleD2_homework>venv\scripts\activate
+
+(venv) D:\moduleD2_homework>pip install django
+Collecting django
+  Using cached Django-4.1.2-py3-none-any.whl (8.1 MB)
+Collecting tzdata
+  Using cached tzdata-2022.5-py2.py3-none-any.whl (336 kB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.3-py3-none-any.whl (42 kB)
+Collecting asgiref<4,>=3.5.2
+  Using cached asgiref-3.5.2-py3-none-any.whl (22 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.5.2 django-4.1.2 sqlparse-0.4.3 tzdata-2022.5
+WARNING: You are using pip version 21.2.4; however, version 22.3 is available.
+You should consider upgrading via the 'D:\moduleD2_homework\venv\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(venv) D:\moduleD2_homework>django-admin startproject NewsPaper
+
+(venv) D:\moduleD2_homework>cd NewsPaper
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py startapp news
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py startapp accounts
+
+(venv) D:\moduleD2_homework\NewsPaper>cd..
+
+(venv) D:\moduleD2_homework>django-admin startproject Mac
+
+(venv) D:\moduleD2_homework>cd Mac
+
+(venv) D:\moduleD2_homework\Mac>python manage.py startapp rest
+
+(venv) D:\moduleD2_homework\Mac>python manage.py makemigrations
+No changes detected
+
+(venv) D:\moduleD2_homework\Mac>python manage.py makemigrations
+No changes detected
+
+(venv) D:\moduleD2_homework\Mac>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+
+(venv) D:\moduleD2_homework\Mac>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from rest.models import Product
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\Mac\rest\models.py", line 5, in <module>
+    class Staff(models.Model):
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\base.py", line 132, in __new__
+    raise RuntimeError(
+RuntimeError: Model class rest.models.Staff doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+>>> from rest.models import Product
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\Mac\rest\models.py", line 5, in <module>
+    class Staff(models.Model):
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\base.py", line 132, in __new__
+    raise RuntimeError(
+RuntimeError: Model class rest.models.Staff doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+>>> from rest.models import Product
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\Mac\rest\models.py", line 5, in <module>
+    class Staff(models.Model):
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\base.py", line 132, in __new__
+    raise RuntimeError(
+RuntimeError: Model class rest.models.Staff doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+>>>
+KeyboardInterrupt
+>>> q
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'q' is not defined
+>>> exit()
+
+(venv) D:\moduleD2_homework\Mac>python manage.py makemigrations
+Traceback (most recent call last):
+  File "D:\moduleD2_homework\Mac\manage.py", line 22, in <module>
+    main()
+  File "D:\moduleD2_homework\Mac\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\registry.py", line 116, in populate
+    app_config.import_models()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\moduleD2_homework\Mac\rest\models.py", line 62, in <module>
+    class AbstractBaseUser(models.Model):
+  File "D:\moduleD2_homework\Mac\rest\models.py", line 63, in AbstractBaseUser
+    password = models.CharField(_('password'), max_length=128)
+NameError: name '_' is not defined
+
+(venv) D:\moduleD2_homework\Mac>python manage.py makemigrations
+Traceback (most recent call last):
+  File "D:\moduleD2_homework\Mac\manage.py", line 22, in <module>
+    main()
+  File "D:\moduleD2_homework\Mac\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\registry.py", line 116, in populate
+    app_config.import_models()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\moduleD2_homework\Mac\rest\models.py", line 62, in <module>
+    class AbstractBaseUser(models.Model):
+  File "D:\moduleD2_homework\Mac\rest\models.py", line 64, in AbstractBaseUser
+    last_login = models.DateTimeField(_('last login'), blank=True, null=True)
+NameError: name '_' is not defined
+
+(venv) D:\moduleD2_homework\Mac>python manage.py makemigrations
+Traceback (most recent call last):
+  File "D:\moduleD2_homework\Mac\manage.py", line 22, in <module>
+    main()
+  File "D:\moduleD2_homework\Mac\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\registry.py", line 116, in populate
+    app_config.import_models()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\moduleD2_homework\Mac\rest\models.py", line 69, in <module>
+    class AbstractUser(AbstractBaseUser, PermissionsMixin):
+NameError: name 'PermissionsMixin' is not defined
+
+(venv) D:\moduleD2_homework\Mac>python manage.py shell
+Traceback (most recent call last):
+  File "D:\moduleD2_homework\Mac\manage.py", line 22, in <module>
+    main()
+  File "D:\moduleD2_homework\Mac\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\registry.py", line 116, in populate
+    app_config.import_models()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\moduleD2_homework\Mac\rest\models.py", line 69, in <module>
+    class AbstractUser(AbstractBaseUser, PermissionsMixin):
+NameError: name 'PermissionsMixin' is not defined
+
+(venv) D:\moduleD2_homework\Mac>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from rest.models import Product
+>>> cap = Produt(name="Капучино 0.3", price = 99.0)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Produt' is not defined
+>>> cap = Product(name="Капучино 0.3", price = 99.0)
+>>> cap.save()
+Traceback (most recent call last):
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: rest_product
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: rest_product
+>>> exit()
+
+(venv) D:\moduleD2_homework\Mac>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+  Your models in app(s): 'rest' have changes that are not yet reflected in a migration, and so won't be applied.
+  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.
+
+(venv) D:\moduleD2_homework\Mac>python manage.py makemigrations
+Migrations for 'rest':
+  rest\migrations\0001_initial.py
+    - Create model AbstractBaseUser
+    - Create model Order
+    - Create model Product
+    - Create model Staff
+    - Create model ProductOrder
+    - Add field products to order
+    - Add field staff to order
+
+(venv) D:\moduleD2_homework\Mac>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, rest, sessions
+Running migrations:
+  Applying rest.0001_initial... OK
+
+(venv) D:\moduleD2_homework\Mac>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from rest.models import Product
+>>> cap = Product(name = "Капучино 0.3", price = 99.0)
+>>> cap.save()
+>>> cap_big = Product.object.create(name = "Капучино 0.3", price = 109.0)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Product' has no attribute 'object'
+>>> cap_big = Product.objects.create(name = "Капучино 0.3", price = 109.0)
+>>> cashier1 = Staff.objects.create(full_name = "Иванов Иван Иванович", position = Staff.cashire, labor_contract = 1754)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'Staff' is not defined
+>>> from rest.models import Staff
+>>> cashier1 = Staff.objects.create(full_name = "Иванов Иван Иванович", position = Staff.cashire, labor_contract = 1754)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Staff' has no attribute 'cashire'
+>>> cashier1 = Staff.objects.create(full_name = "Иванов Иван Иванович", position = Staff.cashier, labor_contract = 1754)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Staff' has no attribute 'cashier'
+>>> exit()
+
+(venv) D:\moduleD2_homework\Mac>python manage.py makemigrations
+Migrations for 'rest':
+  rest\migrations\0002_alter_staff_position.py
+    - Alter field position on staff
+
+(venv) D:\moduleD2_homework\Mac>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, rest, sessions
+Running migrations:
+  Applying rest.0002_alter_staff_position... OK
+
+(venv) D:\moduleD2_homework\Mac>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from rest.models import Staff
+>>> cashier1 = Staff.objets.reate(name = "Иван Иванович Иванов", position = Staff.cashier, labor_contract = 1754)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Staff' has no attribute 'objets'
+>>> cashier1 = Staff.objects.reate(name = "Иван Иванович Иванов", position = Staff.cashier, labor_contract = 1754)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Manager' object has no attribute 'reate'
+>>> cashier1 = Staff.objects.create(name = "Иван Иванович Иванов", position = Staff.cashier, labor_contract = 1754)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Staff' has no attribute 'cashier'
+>>> cashier1 = Staff.objects.create(name = "Иван Иванович Иванов", position = Staff.cashier, labor_contract = 1754)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Staff' has no attribute 'cashier'
+>>> exit()
+
+(venv) D:\moduleD2_homework\Mac>python manage.py makemigrations
+No changes detected
+
+(venv) D:\moduleD2_homework\Mac>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, rest, sessions
+Running migrations:
+  No migrations to apply.
+
+(venv) D:\moduleD2_homework\Mac>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from rest.models import Staff
+>>> cashier1 = Staff.objects.create(name = "Иванов Иван Иванович", position = Staff.cashier, labor_contract = 1754)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 669, in create
+    obj = self.model(**kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\base.py", line 565, in __init__
+    raise TypeError(
+TypeError: Staff() got unexpected keyword arguments: 'name'
+>>> cashier1 = Staff.objects.create(full_name = "Иванов Иван Иванович", position = Staff.cashier, labor_contract = 1754)
+>>> cashier2 = Staff.objects.create(full_name = "Петров Петр Петрович", position = Staff.cashier, labor_contract = 4355)
+>>> direct = Staff.objects.create(full_name = "Максимов Максим Максимович", position = Staff.director, labor_contract = 1254)
+>>> person = Staff.objects.get(labor_contract = 1254)
+>>> print(person)
+Staff object (3)
+>>> print(person.full_name)
+Максимов Максим Максимович
+>>> print(person.position)
+DI
+>>> print(person.get_position_display())
+Директор
+>>> exit()
+
+(venv) D:\moduleD2_homework\Mac>d..
+"d.." не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+(venv) D:\moduleD2_homework\Mac>cd..
+
+(venv) D:\moduleD2_homework>cd NewsPaper
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py makemigrations
+Traceback (most recent call last):
+  File "D:\moduleD2_homework\NewsPaper\manage.py", line 22, in <module>
+    main()
+  File "D:\moduleD2_homework\NewsPaper\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\registry.py", line 116, in populate
+    app_config.import_models()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 25, in <module>
+    class Post(models.Model):
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 33, in Post
+    (ARTICLES, 'Статьи'),
+NameError: name 'ARTICLES' is not defined
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py makemigrations
+Traceback (most recent call last):
+  File "D:\moduleD2_homework\NewsPaper\manage.py", line 22, in <module>
+    main()
+  File "D:\moduleD2_homework\NewsPaper\manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\core\management\__init__.py", line 420, in execute
+    django.setup()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\registry.py", line 116, in populate
+    app_config.import_models()
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\apps\config.py", line 269, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 25, in <module>
+    class Post(models.Model):
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 38, in Post
+    post_Category = models.ManyToManyField(Category, through='Post_Category')
+NameError: name 'Category' is not defined
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py makemigrations
+Migrations for 'news':
+  news\migrations\0001_initial.py
+    - Create model Author
+    - Create model Category
+    - Create model Post
+    - Create model Post_Category
+    - Add field post_Category to post
+    - Create model Comment
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, news, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying news.0001_initial... OK
+  Applying sessions.0001_initial... OK
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from news.models import *
+>>> user1 = User.object.create(username='Nik', first_name='Rad')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'User' has no attribute 'object'
+>>> user1 = User.objects.create(username='Nik', first_name='Rad')
+>>> Author.objects.create(author=user1)
+<Author: Author object (1)>
+>>> user2 = User.objects.create(username='Biear', first_name='Grials')
+>>> Author.objects.create(author=user2)
+<Author: Author object (2)>
+>>> Category.objects.create(name='IT')
+<Category: Category object (1)>
+>>> Category.objects.create(name='Ecology')
+<Category: Category object (2)>
+>>> Category.objects.create(name='Space')
+<Category: Category object (3)>
+>>> Category.objets.create(name='Robotics')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Category' has no attribute 'objets'
+>>> Category.objects.create(name='Robotics')
+<Category: Category object (4)>
+>>> Post.objects.create(author=Author.objects.get(author=User.objects.get(username='Nik')))
+<Post: Post object (1)>
+>>> Post.objects.create(author=Author.objects.get(author=User.objects.get(username='Nik')), category_Type='NW', title='Hot News', text='Brai "wait for it, wait for it" kin news')
+<Post: Post object (2)>
+>>> Post.objects.create(author=Author.objects.get(author=User.objects.get(username='Nik')), category_Type='NW', title='Cold News  ', text='Go to the MALL')
+<Post: Post object (3)>
+>>> Post.objects.create(author=Author.objects.get(author=User.objects.get(username='Nik')), category_Type='NW', title='Cold News  ', text='Go to the MALL', post_Category=Category.objects.get(name= 'IT'))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 669, in create
+    obj = self.model(**kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\base.py", line 562, in __init__
+    _setattr(self, prop, value)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 595, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use post_Category.set() instead.
+>>> Post.objects.create(author=Author.objects.get(author=User.objects.get(username='Nik')), category_Type='NW', title='Cold News  ', text='Go to the MALL', post_Category=Category.objects.set(name= 'IT'))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Manager' object has no attribute 'set'
+>>>
+>>> Post.objects.filter(author = Author.objects.get(author = User.objects.get(username = 'Nik')))
+<QuerySet [<Post: Post object (1)>, <Post: Post object (2)>, <Post: Post object (3)>]>
+>>> nik_Posts = Post.objects.filter(author = Author.objects.get(author = User.objects.get(username = 'Nik')))
+>>> nik_Posts.values('author', 'category_Type', 'post_Category', 'title', 'text')
+<QuerySet [{'author': 1, 'category_Type': 'AR', 'post_Category': None, 'title': '', 'text': ''}, {'author': 1, 'category_Type': 'NW', 'post_Category': None, 'title': 'Hot News', 'text': 'Brai "wait for it, wait for it" kin news'}, {'author': 1, 'category_Type': 'NW', 'post_Category': None, 'title': 'Cold News  ', 'text': 'Go to the MALL'}]>
+>>> nik_Posts1 = Post.objects.get(title = 'Hot News')
+>>> nik_Cat1 = Category.objects.get(name='IT')
+>>> nik_Cat2 = Category.objects.get(name='Robotics')
+>>> nik_Post1.post_Category = nik_Cat1
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'nik_Post1' is not defined
+>>> nik_Post1.post_Category = nik_Cat1.name
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'nik_Post1' is not defined
+>>> nik_Post1.post_Category = 'IT'
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'nik_Post1' is not defined
+>>> nik_Post1.post_Category = Category.objects.get(name='IT')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'nik_Post1' is not defined
+>>> print(nik_Cat1.name)
+IT
+>>> print(nik_Post1)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'nik_Post1' is not defined
+>>> print(nik_Post1.post_Category)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'nik_Post1' is not defined
+>>> nik_Post1.values()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'nik_Post1' is not defined
+>>> nik_Posts1 = Post.objects.get(title = 'Hot News')
+>>> print(nik_Post1)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'nik_Post1' is not defined
+>>> print(nik_Post1.title)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'nik_Post1' is not defined
+>>> nik_Posts1 = Post.objects.get(title = 'Hot News')
+>>> nik_Posts1.values('author', 'category_Type', 'post_Category', 'title', 'text')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Post' object has no attribute 'values'
+>>> nik_Posts1.title
+'Hot News'
+>>> nik_Posts1.post_Categoty
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Post' object has no attribute 'post_Categoty'
+>>> nik_Posts1.category_Type
+'NW'
+>>> nik_Posts1.author
+<Author: Author object (1)>
+>>> nik_Posts1.get(author= User.objects.get(username='Nik'))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Post' object has no attribute 'get'
+>>> Post.objects.create(author = Author.objects.get(author = User.objects.get(username='Nik')), category_Type='AR', post_Category= Category.objects.get(name='IT'), title='Mashine War', text=hahaha catcha')
+  File "<console>", line 1
+    Post.objects.create(author = Author.objects.get(author = User.objects.get(username='Nik')), category_Type='AR', post_Category= Category.objects.get(name='IT'), title='Mashine War', text=hahaha catcha')
+                                                                                                                                                                                                           ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> Post.objects.create(author = Author.objects.get(author = User.objects.get(username='Nik')), category_Type='AR', post_Category= Category.objects.get(name='IT'), title='Mashine War', text='hahaha catcha')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 669, in create
+    obj = self.model(**kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\base.py", line 562, in __init__
+    _setattr(self, prop, value)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 595, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use post_Category.set() instead.
+>>> Post.objects.create(author = Author.objects.get(author = User.objects.get(username='Nik')), category_Type='AR', post_Category= Category.set(name='Robotics'), title='Mashine War', text='hahaha catcha')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Category' has no attribute 'set'
+>>> Post.objects.create(author = Author.objects.get(author = User.objects.get(username='Nik')), category_Type='AR', post_Category.set()=Category.objects.get(name='Robotics'), title='Mashine War', text='hahaha catcha')
+  File "<console>", line 1
+    Post.objects.create(author = Author.objects.get(author = User.objects.get(username='Nik')), category_Type='AR', post_Category.set()=Category.objects.get(name='Robotics'), title='Mashine War', text='hahaha catcha')
+                                                                                                                    ^^^^^^^^^^^^^^^^^^^^
+SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
+>>> Post.objects.create(author = Author.objects.get(author = User.objects.get(username='Nik')), category_Type='AR', title='Mashine War', text='hahaha catcha')
+<Post: Post object (4)>
+>>> Post.objects.create(author = Author.objects.get(author = User.objects.get(username='Biear')), category_Type='AR', title='Oil trash', text='Oil ompany on fire')
+<Post: Post object (5)>
+>>> Post.objects.create(author = Author.objects.get(author = User.objects.get(username='Biear')), category_Type='NW', title='Misha sleep', text='Masha wake up!!!!')
+<Post: Post object (6)>
+>>> Post.objects.create(author = Author.objects.get(author = User.objects.get(username='Biear')), category_Type='NW', title='Monkey on Moon', text='Rat toooo!')
+<Post: Post object (7)>
+>>> p1 = Post.objects.get(pk=1)
+>>> p1.title
+''
+>>> p2 = Post.objects.get(pk=2)
+>>> p3 = Post.objects.get(pk=3)
+>>> p4 = Post.objects.get(pk=4)
+>>> p5 = Post.objects.get(pk=5)
+>>> p6 = Post.objects.get(pk=6)
+>>> p7 = Post.objects.get(pk=7)
+>>> p2.title
+'Hot News'
+>>> p3.title
+'Cold News  '
+>>> c1 = Category.objects.get(name='IT')
+>>> c1.name
+'IT'
+>>> c2 = Category.objects.get(name='Ecology')
+>>> c3 = Category.objects.get(name='Space')
+>>> c4 = Category.objects.get(name='Robotis')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+news.models.Category.DoesNotExist: Category matching query does not exist.
+>>> c4 = Category.objects.get(name='Robotics')
+>>> p1.post_Category.add(c1)
+>>> p2.post_Category.add(c2)
+>>> p3.post_Category.add(c3, c2)
+>>> p4.title
+'Mashine War'
+>>> p4.post_Category.add(c1, c4)
+>>> p5.title
+'Oil trash'
+>>> p5.post_Category.add(c3, c2)
+>>> p6.title
+'Misha sleep'
+>>> p6.post_Category.add(c3, c2)
+>>> p7.title
+'Monkey on Moon'
+>>> p7.post_Category.add(c3, c2, c1, c4)
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=1), comment_User = User.objects.get(username='Nik'), text='comment text NIk')
+<Comment: Comment object (1)>
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=2), comment_User = User.objects.get(username='Biars'), text='comment text Biears')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=2), comment_User = User.objects.get(username='Biar'), text='comment text Biears')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=2), comment_User = User.objects.get(username='Biear'), text='comment text Biears')
+<Comment: Comment object (2)>
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=3), comment_User = User.objects.get(username='Biear'), text='comment text Biears')
+<Comment: Comment object (3)>
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=3), comment_User = User.objects.get(username='Nik'), text='comment text Biears to Nik')
+<Comment: Comment object (4)>
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=4), comment_User = User.objects.get(username='Nik'), text='comment text NIk to Biear')
+<Comment: Comment object (5)>
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=4), comment_User = User.objects.get(username='Biear'), text='comment text NIk to Biear')
+<Comment: Comment object (6)>
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=5), comment_User = User.objects.get(username='Biear'), text='comment text NIk to Biear')
+<Comment: Comment object (7)>
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=5), comment_User = User.objects.get(username='Nik'), text='comment text Biear to NIk')
+<Comment: Comment object (8)>
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=6), comment_User = User.objects.get(username='Nik'), text='comment text Biear to NIk')
+<Comment: Comment object (9)>
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=6), comment_User = User.objects.get(username='Biear'), text='comment text NIk to Biear')
+<Comment: Comment object (10)>
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=7), comment_User = User.objects.get(username='Biear'), text='comment text NIk to Biear')
+<Comment: Comment object (11)>
+>>> Comment.objects.create(comment_Post= Post.objects.get(pk=7), comment_User = User.objects.get(username='Nik'), text='comment text Biear to NIk')
+<Comment: Comment object (12)>
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).dislike()
+>>> Post.objects.get(pk=1).dislike()
+>>> Post.objects.get(pk=1).dislike()
+>>> Post.objects.get(pk=2).dislike()
+>>> Post.objects.get(pk=2).dislike()
+>>> Post.objects.get(pk=2).dislike()
+>>> Post.objects.get(pk=2).dislike()
+>>> Post.objects.get(pk=2).dislike()
+>>> Post.objects.get(pk=3).like()
+>>> Post.objects.get(pk=3).like()
+>>> Post.objects.get(pk=3).like()
+>>> Post.objects.get(pk=3).like()
+>>>
+>>> Post.objects.get(pk=4).like()
+>>> Post.objects.get(pk=4).like()
+>>> Post.objects.get(pk=4).like()
+>>> Post.objects.get(pk=5).like()
+>>> Post.objects.get(pk=5).like()
+>>> Post.objects.get(pk=5).dislike()
+>>> Post.objects.get(pk=6).dislike()
+>>> Post.objects.get(pk=7).like()
+>>> Comment.objects.get(pk=1).like()
+>>> Comment.objects.get(pk=1).like()
+>>> Comment.objects.get(pk=1).like()
+>>> Comment.objects.get(pk=1).like()
+>>> Comment.objects.get(pk=1).dislike()
+>>> Comment.objects.get(pk=2).dislike()
+>>> Comment.objects.get(pk=3).like()
+>>> Comment.objects.get(pk=3).like()
+>>> Comment.objects.get(pk=4).like()
+>>> Comment.objects.get(pk=4).dislike()
+>>> Comment.objects.get(pk=5).like()
+>>>
+>>>
+>>> Comment.objects.get(pk=5).like()
+>>> Comment.objects.get(pk=5).like()
+>>> Comment.objects.get(pk=5).like()
+>>> Comment.objects.get(pk=6).like()
+>>> Comment.objects.get(pk=7).like()
+>>> Comment.objects.get(pk=7).like()
+>>> Comment.objects.get(pk=7).dislike()
+>>> Comment.objects.get(pk=8).dislike()
+>>> Comment.objects.get(pk=8).dislike()
+>>> Comment.objects.get(pk=8).dislike()
+>>> Comment.objects.get(pk=8).dislike()
+>>> Comment.objects.get(pk=9).dislike()
+>>> Comment.objects.get(pk=10).like()
+>>> Comment.objects.get(pk=11).like()
+>>> Comment.objects.get(pk=11).like()
+>>> Comment.objects.get(pk=12).like()
+>>> Comment.objects.get(pk=12).like()
+>>> Comment.objects.get(pk=12).like()
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 19, in update_rating
+    sum_Comment_Rating += comment_Rating.get('commentRating')
+UnboundLocalError: local variable 'sum_Comment_Rating' referenced before assignment
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 19, in update_rating
+    sum_Comment_Rating += comment_Rating.get('commentRating')
+UnboundLocalError: local variable 'sum_Comment_Rating' referenced before assignment
+>>> exit()
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py makemigrations
+No changes detected
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, news, sessions
+Running migrations:
+  No migrations to apply.
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from news.models import *
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 19, in update_rating
+    sum_Comment_Rating += comment_Rating.get('commentRating')
+UnboundLocalError: local variable 'sum_Comment_Rating' referenced before assignment
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 19, in update_rating
+    self.rating = sum_Post_Rating * 3 + sum_Comment_Reating
+UnboundLocalError: local variable 'sum_Comment_Rating' referenced before assignment
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 19, in update_rating
+    sum_Comment_Rating = 0
+UnboundLocalError: local variable 'sum_Comment_Rating' referenced before assignment
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 19, in update_rating
+    self.rating = sum_Post_Rating * 3 + sum_Comment_Reating
+UnboundLocalError: local variable 'sum_Comment_Rating' referenced before assignment
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 19, in update_rating
+UnboundLocalError: local variable 'sum_Comment_Rating' referenced before assignment
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 19, in update_rating
+UnboundLocalError: local variable 'sum_Comment_Rating' referenced before assignment
+>>> exit()
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py makemigrations
+No changes detected
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, news, sessions
+Running migrations:
+  No migrations to apply.
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from news.models import *
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 14, in update_rating
+    sum_Post += post_Rating.get('postRating')
+UnboundLocalError: local variable 'sum_Post' referenced before assignment
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 14, in update_rating
+    sum_Post += post_Rating.get('postRating')
+UnboundLocalError: local variable 'sum_Post' referenced before assignment
+>>> exit()
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py makemigrations
+Was author.rating renamed to author.ratingAuthor (a SmallIntegerField)? [y/N] y
+Migrations for 'news':
+  news\migrations\0002_rename_rating_author_ratingauthor.py
+    - Rename field rating on author to ratingAuthor
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, news, sessions
+Running migrations:
+  Applying news.0002_rename_rating_author_ratingauthor... OK
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from news.models import *
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 14, in update_rating
+    sum_Post += post_Rating.get('postRating')
+UnboundLocalError: local variable 'sum_Post' referenced before assignment
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 14, in update_rating
+    sum_Post += post_Rating.get('postRating')
+UnboundLocalError: local variable 'sum_Post' referenced before assignment
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 14, in update_rating
+    sum_Post += post_Rating.get('postRating')
+UnboundLocalError: local variable 'sum_Post' referenced before assignment
+>>> exit()
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from news.models import *
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\NewsPaper\news\models.py", line 12, in update_rating
+    sum_Post, sum_Comment = 0
+TypeError: cannot unpack non-iterable int object
+>>> exit()
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from news.models import *
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+>>> Author.objects.get(author=User.objects.get(username='Biear')).update_rating()
+>>> a = Author.objects.get(author=User.objects.get(username='Biear'))
+>>> a.ratingAuthor
+0
+>>> a.ratingAuthor
+0
+>>> a = Author.objects.get(author=User.objects.get(username='Nik'))
+>>> a.ratingAuthor
+0
+>>> Comment.objects.get(pk=1).like()
+>>> Comment.objects.get(pk=1).like()
+>>> Comment.objects.get(pk=1).like()
+>>>
+>>> Comment.objects.get(pk=1).like()
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+>>> a = Author.objects.get(author=User.objects.get(username='Nik'))
+>>> a.ratingAuthor
+0
+>>> Post.objects.get(pk=1).kile()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Post' object has no attribute 'kile'
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Post' object has no attribute 'update_rating'
+>>> a.ratingAuthor
+0
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>>
+>>>
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Post.objects.get(pk=1).like()
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+>>> a = Author.objects.get(author=User.objects.get(username='Nik'))
+>>> a.ratingAuthor
+0
+>>> p = Post.objects.get(pk =1 )
+>>> p.rating
+26
+>>> c1.rating
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'c1' is not defined
+>>> c = Comment.object.get(pk=1)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Comment' has no attribute 'object'
+>>> c = Comment.objects.get(pk=1)
+>>> c.rating
+7
+>>> Author.objects.get(author=User.objects.get(username='Mik'))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+>>> Author.objects.get(author=User.objects.get(username='Mik')).update_rating()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+>>> exit()
+
+(venv) D:\moduleD2_homework\NewsPaper>python manage.py shell
+Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from news.models import *
+>>> Author.objects.get(author=User.objects.get(username='Nik')).update_rating()
+>>> a = Author.objects.get(author=User.objects.get(username='Nik'))
+>>> a.ratingAuthor
+93
+>>> Author.objects.get(author=User.objects.get(username='Biear')).update_rating()
+>>> a = Author.objects.get(author=User.objects.get(username='Biear'))
+>>> a.ratingAuthor
+9
+>>> best = Author.objects.all().order_by('-ratingAuthor').values('author', 'ratingAuthor')[0]
+>>> print(best)
+{'author': 1, 'ratingAuthor': 93}
+>>> best = Author.objects.all().order_by('-ratingAuthor').values(User.objects.get(author=User.objects.get(username='Nik')), 'ratingAuthor')[0]
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 636, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1445, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1256, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1233, in check_query_object_type
+    raise ValueError(
+ValueError: Cannot query "Nik": Must be "Author" instance.
+>>> best = Author.objects.all().order_by('-ratingAuthor').values('author', 'ratingAuthor')[0]
+>>> print(best)
+{'author': 1, 'ratingAuthor': 93}
+>>> best = Author.objects.all().values('Nik')
+Traceback (most recent call last):
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 2142, in add_fields
+    join_info = self.setup_joins(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1808, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1709, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Nik' into field. Choices are: author, author_id, id, post, ratingAuthor
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1297, in values
+    clone = self._values(*fields, **expressions)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1292, in _values
+    clone.query.set_values(fields)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 2437, in set_values
+    self.add_fields(field_names, True)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 2175, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Nik' into field. Choices are: author, author_id, id, post, ratingAuthor
+>>> best = Author.objects.all().values('author')
+>>> print(best)
+<QuerySet [{'author': 1}, {'author': 2}]>
+>>> print(best[0])
+{'author': 1}
+>>> print(best[0][0])
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+KeyError: 0
+>>> print(best[0])
+{'author': 1}
+>>> print(best[0].1)
+  File "<console>", line 1
+    print(best[0].1)
+          ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print(best[0].key)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'key'
+>>> print(best[1])
+{'author': 2}
+>>> print(best.get(author))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'author' is not defined
+>>> print(best.get('author'))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 636, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1404, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack (expected 2)
+>>> print(best.get())
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 653, in get
+    raise self.model.MultipleObjectsReturned(
+news.models.Author.MultipleObjectsReturned: get() returned more than one Author -- it returned 2!
+>>> print(best)
+<QuerySet [{'author': 1}, {'author': 2}]>
+>>> print(best[0].ratingAuthor)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'ratingAuthor'
+>>> Author.objects.all()order_by('ratingAuthor').values('author', 'ratingAuthor')
+  File "<console>", line 1
+    Author.objects.all()order_by('ratingAuthor').values('author', 'ratingAuthor')
+                        ^^^^^^^^
+SyntaxError: invalid syntax
+>>> Author.objects.all().order_by('ratingAuthor').values('author', 'ratingAuthor')
+<QuerySet [{'author': 2, 'ratingAuthor': 9}, {'author': 1, 'ratingAuthor': 93}]>
+>>> Post.objects.all().order_by('rating').values('author', 'date_Creation', 'rating', 'title', 'text')
+<QuerySet [{'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 9, 33, 595364, tzinfo=datetime.timezone.utc), 'rating': -5, 'title': 'Hot News', 'text': 'Brai "wait for it, wait for it" kin news'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 41, 58, 474230, tzinfo=datetime.timezone.utc), 'rating': -1, 'title': 'Misha sleep', 'text': 'Masha wake up!!!!'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 41, 14, 452861, tzinfo=datetime.timezone.utc), 'rating': 1, 'title': 'Oil trash', 'text': 'Oil ompany on fire'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 43, 0, 518466, tzinfo=datetime.timezone.utc), 'rating': 1, 'title': 'Monkey on Moon', 'text': 'Rat toooo!'}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 39, 20, 728758, tzinfo=datetime.timezone.utc), 'rating': 3, 'title': 'Mashine War', 'text': 'hahaha catcha'}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 10, 26, 187827, tzinfo=datetime.timezone.utc), 'rating': 4, 'title': 'Cold News  ', 'text': 'Go to the MALL'}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 5, 36, 964698, tzinfo=datetime.timezone.utc), 'rating': 26, 'title': '', 'text': ''}]>
+>>> Post.objects.all().order_by('rating' > 20).values('author', 'date_Creation', 'rating', 'title', 'text')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: '>' not supported between instances of 'str' and 'int'
+>>> Post.objects.all().order_by('-rating').values('author', 'date_Creation', 'rating', 'title', 'text')
+<QuerySet [{'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 5, 36, 964698, tzinfo=datetime.timezone.utc), 'rating': 26, 'title': '', 'text': ''}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 10, 26, 187827, tzinfo=datetime.timezone.utc), 'rating': 4, 'title': 'Cold News  ', 'text': 'Go to the MALL'}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 39, 20, 728758, tzinfo=datetime.timezone.utc), 'rating': 3, 'title': 'Mashine War', 'text': 'hahaha catcha'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 41, 14, 452861, tzinfo=datetime.timezone.utc), 'rating': 1, 'title': 'Oil trash', 'text': 'Oil ompany on fire'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 43, 0, 518466, tzinfo=datetime.timezone.utc), 'rating': 1, 'title': 'Monkey on Moon', 'text': 'Rat toooo!'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 41, 58, 474230, tzinfo=datetime.timezone.utc), 'rating': -1, 'title': 'Misha sleep', 'text': 'Masha wake up!!!!'}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 9, 33, 595364, tzinfo=datetime.timezone.utc), 'rating': -5, 'title': 'Hot News', 'text': 'Brai "wait for it, wait for it" kin news'}]>
+>>> best1 = Post.objects.all().order_by('-rating').values('author', 'date_Creation', 'rating', 'title', 'text')
+>>> print(best[0])
+{'author': 1}
+>>> print(best1[0])
+{'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 5, 36, 964698, tzinfo=datetime.timezone.utc), 'rating': 26, 'title': '', 'text': ''}
+>>> best2 = Comment.objects.all().order_by('comment_Post').values()
+>>> print(best2)
+<QuerySet [{'id': 1, 'comment_Post_id': 1, 'comment_User_id': 1, 'text': 'comment text NIk', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 52, 58, 339961, tzinfo=datetime.timezone.utc), 'rating': 7}, {'id': 2, 'comment_Post_id': 2, 'comment_User_id': 2, 'text': 'comment text Biears', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 54, 32, 845421, tzinfo=datetime.timezone.utc), 'rating': -1}, {'id': 3, 'comment_Post_id': 3, 'comment_User_id': 2, 'text': 'comment text Biears', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 54, 44, 778497, tzinfo=datetime.timezone.utc), 'rating': 2}, {'id': 4, 'comment_Post_id': 3, 'comment_User_id': 1, 'text': 'comment text Biears to Nik', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 54, 58, 733209, tzinfo=datetime.timezone.utc), 'rating': 0}, {'id': 5, 'comment_Post_id': 4, 'comment_User_id': 1, 'text': 'comment text NIk to Biear', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 55, 20, 759349, tzinfo=datetime.timezone.utc), 'rating': 4}, {'id': 6, 'comment_Post_id': 4, 'comment_User_id': 2, 'text': 'comment text NIk to Biear', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 55, 31, 695125, tzinfo=datetime.timezone.utc), 'rating': 1}, {'id': 7, 'comment_Post_id': 5, 'comment_User_id': 2, 'text': 'comment text NIk to Biear', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 55, 41, 835030, tzinfo=datetime.timezone.utc), 'rating': 1}, {'id': 8, 'comment_Post_id': 5, 'comment_User_id': 1, 'text': 'comment text Biear to NIk', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 56, 0, 256803, tzinfo=datetime.timezone.utc), 'rating': -4}, {'id': 9, 'comment_Post_id': 6, 'comment_User_id': 1, 'text': 'comment text Biear to NIk', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 56, 9, 791363, tzinfo=datetime.timezone.utc), 'rating': -1}, {'id': 10, 'comment_Post_id': 6, 'comment_User_id': 2, 'text': 'comment text NIk to Biear', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 56, 29, 515617, tzinfo=datetime.timezone.utc), 'rating': 1}, {'id': 11, 'comment_Post_id': 7, 'comment_User_id': 2, 'text': 'comment text NIk to Biear', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 56, 40, 604988, tzinfo=datetime.timezone.utc), 'rating': 2}, {'id': 12, 'comment_Post_id': 7, 'comment_User_id': 1, 'text': 'comment text Biear to NIk', 'date_Of_Create': datetime.datetime(2022, 10, 25, 20, 57, 4, 731512, tzinfo=datetime.timezone.utc), 'rating': 3}]>
+>>> print(best1)
+<QuerySet [{'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 5, 36, 964698, tzinfo=datetime.timezone.utc), 'rating': 26, 'title': '', 'text': ''}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 10, 26, 187827, tzinfo=datetime.timezone.utc), 'rating': 4, 'title': 'Cold News  ', 'text': 'Go to the MALL'}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 39, 20, 728758, tzinfo=datetime.timezone.utc), 'rating': 3, 'title': 'Mashine War', 'text': 'hahaha catcha'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 41, 14, 452861, tzinfo=datetime.timezone.utc), 'rating': 1, 'title': 'Oil trash', 'text': 'Oil ompany on fire'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 43, 0, 518466, tzinfo=datetime.timezone.utc), 'rating': 1, 'title': 'Monkey on Moon', 'text': 'Rat toooo!'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 41, 58, 474230, tzinfo=datetime.timezone.utc), 'rating': -1, 'title': 'Misha sleep', 'text': 'Masha wake up!!!!'}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 9, 33, 595364, tzinfo=datetime.timezone.utc), 'rating': -5, 'title': 'Hot News', 'text': 'Brai "wait for it, wait for it" kin news'}]>
+>>> best2 = Comment.objects.all().order_by(Post.objects.get(rating = 26)).values()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1644, in order_by
+    obj.query.add_ordering(*field_names)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 2211, in add_ordering
+    raise FieldError("Invalid order_by arguments: %s" % errors)
+django.core.exceptions.FieldError: Invalid order_by arguments: [<Post: Post object (1)>]
+>>> Post.objects.filter(rating > 20).order_by('-rating').values('author', 'date_Creation', 'rating', 'title', 'text')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'rating' is not defined
+>>> Post.objects.filter(rating = 20).order_by('-rating').values('author', 'date_Creation', 'rating', 'title', 'text')
+<QuerySet []>
+>>> Post.objects.filter(rating = 20).order_by('rating').values('author', 'date_Creation', 'rating', 'title', 'text')
+<QuerySet []>
+>>> Post.objects.filter(rating >= 20).order_by('rating').values('author', 'date_Creation', 'rating', 'title', 'text')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'rating' is not defined
+>>> Post.objects.filter(rating).order_by('rating').values('author', 'date_Creation', 'rating', 'title', 'text')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'rating' is not defined
+>>> Post.objects.all().order_by('rating').values('author__name', 'date_Creation', 'rating', 'title', 'text')
+Traceback (most recent call last):
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1831, in transform
+    return self.try_transform(wrapped, name)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1341, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'name' for BigAutoField or join on the field not permitted.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1297, in values
+    clone = self._values(*fields, **expressions)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1292, in _values
+    clone.query.set_values(fields)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 2437, in set_values
+    self.add_fields(field_names, True)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 2151, in add_fields
+    cols.append(join_info.transform_function(target, final_alias))
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1835, in transform
+    raise last_field_exception
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1808, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1709, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'name' into field. Choices are: author, author_id, id, post, ratingAuthor
+>>> Post.objects.all().order_by('rating').values('author', 'date_Creation', 'rating', 'title', 'text')
+<QuerySet [{'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 9, 33, 595364, tzinfo=datetime.timezone.utc), 'rating': -5, 'title': 'Hot News', 'text': 'Brai "wait for it, wait for it" kin news'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 41, 58, 474230, tzinfo=datetime.timezone.utc), 'rating': -1, 'title': 'Misha sleep', 'text': 'Masha wake up!!!!'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 41, 14, 452861, tzinfo=datetime.timezone.utc), 'rating': 1, 'title': 'Oil trash', 'text': 'Oil ompany on fire'}, {'author': 2, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 43, 0, 518466, tzinfo=datetime.timezone.utc), 'rating': 1, 'title': 'Monkey on Moon', 'text': 'Rat toooo!'}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 39, 20, 728758, tzinfo=datetime.timezone.utc), 'rating': 3, 'title': 'Mashine War', 'text': 'hahaha catcha'}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 10, 26, 187827, tzinfo=datetime.timezone.utc), 'rating': 4, 'title': 'Cold News  ', 'text': 'Go to the MALL'}, {'author': 1, 'date_Creation': datetime.datetime(2022, 10, 25, 20, 5, 36, 964698, tzinfo=datetime.timezone.utc), 'rating': 26, 'title': '', 'text': ''}]>
+>>> best3 = Comment.objects.get(comment_Post=Post.objects.get(rating=26))
+>>> print(best3)
+Comment object (1)
+>>> print(best3.text)
+comment text NIk
+>>> print(best3.rating)
+7
+>>> print(best3.date_Of_Create)
+2022-10-25 20:52:58.339961+00:00
+>>> best3 = Comment.objects.all().get(comment_Post=Post.objects.get(rating=26))
+>>> print(best3)
+Comment object (1)
+>>> best3 = Comment.objects.all().get(comment_Post=Post.objects.get(author=Author.objects.get(author=User.objects.get(username='Nik'))))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 653, in get
+    raise self.model.MultipleObjectsReturned(
+news.models.Post.MultipleObjectsReturned: get() returned more than one Post -- it returned 4!
+>>> best3 = Comment.objectsfilter(comment_Post=Post.objects.get(author=Author.objects.get(author=User.objects.get(username='Nik')))).all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Comment' has no attribute 'objectsfilter'
+>>> best3 = Comment.objectsfilter(author=Author.objects.get(author=User.objects.get(username='Nik'))).all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'Comment' has no attribute 'objectsfilter'
+>>> best3 = Comment.objects.filter(author=Author.objects.get(author=User.objects.get(username='Nik'))).all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1407, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1217, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1709, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'author' into field. Choices are: comment_Post, comment_Post_id, comment_User, comment_User_id, date_Of_Create, id, rating, text
+>>> best3 = Comment.objects.filter(author=Author.objects.get(author=User.objects.get(username='Nik')))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1407, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1217, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\sql\query.py", line 1709, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'author' into field. Choices are: comment_Post, comment_Post_id, comment_User, comment_User_id, date_Of_Create, id, rating, text
+>>> best3 = Comment.objects.filter(comment_Post=Post.objects.get(author=Author.objects.get(author=User.objects.get(username='Nik'))))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 653, in get
+    raise self.model.MultipleObjectsReturned(
+news.models.Post.MultipleObjectsReturned: get() returned more than one Post -- it returned 4!
+>>> best3 = Comment.objects.all().filter(rating=7)
+>>> print(best3)
+<QuerySet [<Comment: Comment object (1)>]>
+>>> print(best3.comment_Post)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'comment_Post'
+>>> print(best3.text)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'text'
+>>> print(best3)
+<QuerySet [<Comment: Comment object (1)>]>
+>>> best3 = Comment.objects.all().filter(comment_Post)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'comment_Post' is not defined
+>>> best3 = Comment.objects.all().filter(rating)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'rating' is not defined
+>>> best3 = Comment.objects.all().filter(comment_User=User.objects.get(username='Nik'))
+>>> print(best3)
+<QuerySet [<Comment: Comment object (1)>, <Comment: Comment object (4)>, <Comment: Comment object (5)>, <Comment: Comment object (8)>, <Comment: Comment object (9)>, <Comment: Comment object (12)>]>
+>>> best3 = Comment.objects.all().filter(comment_Post=Post.objects.get(rating=26))
+>>> print(best3)
+<QuerySet [<Comment: Comment object (1)>]>
+>>> best3 = Comment.objects.all().filter(comment_Post=Post.objects.get(rating=7))
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\moduleD2_homework\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+news.models.Post.DoesNotExist: Post matching query does not exist.
+>>> best3 = Comment.objects.all().filter(comment_Post=Post.objects.get(rating=4))
+>>> print(best3)
+<QuerySet [<Comment: Comment object (3)>, <Comment: Comment object (4)>]>
+>>> Post.objects.get(author=Author.objects.get(author=User.objects.get(username='Nik'))
