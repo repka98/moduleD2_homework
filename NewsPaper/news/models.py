@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
 
-# Create your models here.
 
 class Author(models.Model):
     author = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -54,6 +53,7 @@ class Post(models.Model):
 
     def preview(self):
         return self.text[0:124] + '...'
+
 
 class Post_Category(models.Model):
     post_Key = models.ForeignKey(Post, on_delete=models.CASCADE)
