@@ -43,6 +43,12 @@ class Post(models.Model):
     text = models.TextField()
     rating = models.SmallIntegerField(default=0)
 
+    def __str__(self):
+        return f'{self.author} {self.rating}'
+
+    def get_absolute_url(self):
+        return f'/posts/{self.id}'
+
     def like(self):
         self.rating += 1
         self.save()

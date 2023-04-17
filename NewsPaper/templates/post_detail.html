@@ -1,0 +1,36 @@
+{% extends 'flatpages/default.html' %}
+ 
+{% block title %} Post list {% endblock title %}
+ 
+{% block content %}
+<table>
+    <thead>
+        <th>
+            Author
+        </th>
+        <th>
+            Title
+        </th>
+        <th>
+            Rating
+        </th>
+        <th>
+            Text
+        </th>
+    </thead>
+    <tr>
+        <td>
+            {{ news.author|title }}
+        </td>
+        <td>
+            {{ news.title|title }}
+        </td>
+        <td>
+            {{ news.rating }}
+        </td>
+        <td>
+            {{ news.text }}
+        </td>
+    </tr>
+</table>
+{% endblock content %}
